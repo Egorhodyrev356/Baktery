@@ -21,4 +21,12 @@ while True:
             print('Получил',data)
         except:
             pass
+    # Отправка игрокам поля
+    for sock in players:
+        try:
+            sock.send("LOL".encode())
+        except:
+            players.remove(sock)
+            sock.close()
+            print("Сокет закрыт")
     time.sleep(1)
