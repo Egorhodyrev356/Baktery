@@ -21,7 +21,7 @@ Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-book1 = Book(title="Гарри Поттер", author="Дж.К Роулинг")  # Добавляем первую книгу: "Гарри Поттер"
+book1 = Book(title="Гарри Поттер", author="Дж.К Роулинг")
 book2 = Book(title="Властелин колец", author="Джон Толкин")
 book3 = Book(title='1984', author='Джордж Оруэлл')
 
